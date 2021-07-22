@@ -5,16 +5,15 @@ Q: WAP to add elements of an array by dynamic memory allocation.
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
-	int r = 3, c = 4, i, j, count;
-	int *arr[r];
-	for (i=0; i<r; i++)
-		arr[i] = (int *)malloc(c * sizeof(int));
+	int count,n, *arr[100];
+	printf("Enter the size of the array: ");
+	scanf("%d",&n);
+	for (int i=0; i<n; i++)
+		arr[i] = (int *)malloc(n * sizeof(int));
     printf("Memory successfully allocated using malloc.\n");
 	count = 0;
-	for (i = 0; i < r; i++)
-	for (j = 0; j < c; j++)
-		arr[i][j] = ++count;
-	for (i = 0; i < r; i++)
-	for (j = 0; j < c; j++)
-		printf("%d ", arr[i][j]);
+	for (int j = 0; j < n; j++){
+		arr[j][j] = ++count;
+		printf("%d ", arr[j][j]);
+	}
 }
