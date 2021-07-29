@@ -19,7 +19,7 @@
         i) Structure variable
         ii) Pointer variable
 #
-###### Question4: [```Answer4```](q4.c)
+###### Question4: [```Answer6```](q6.c)
     ✨ Program to extract bytes from an integer (Hexadecimal) value. 
         Here we will take an integer value in decimal format and then extract all 4 bytes in 4 different variables.
 ##
