@@ -1,4 +1,10 @@
+# c output files
 *.exe
 *.out
+
+# visual studio
 *.code-workspace
 .vscode
+
+# personalised bin folder
+.xbin
