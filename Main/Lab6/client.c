@@ -81,13 +81,17 @@ void main (){
         scanf("%s", line);
         send(sd, line, strlen(line) + 1, 0);
         printf("data sent (%s)\n", line);
+        if(!strcmp(line, "quit"))
+        exit(0);
         printf("Enter 2nd number : ");
         scanf("%s", line);
         send(sd, line, strlen(line) + 1, 0);
         printf("data sent (%s)\n", line);
+        if(!strcmp(line, "quit"))
+        exit(0);
         n=recv(sd, line, MAX_MSG, 0);
         printf("received from server %s\n", line);
-    } while(strcmp(line, "quit"));
+    } while(1);
     printf("closing connection with the server\n");
     close(sd);
 }
