@@ -8,3 +8,5 @@
 
 # personalised bin folder
 .xbin
+*.doc
+*.pdf
